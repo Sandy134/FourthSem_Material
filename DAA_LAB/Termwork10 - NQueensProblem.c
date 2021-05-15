@@ -23,13 +23,13 @@ int isQueenSafe(char **chessboard,int row,int col,int n)
         }
     }
 
-    //check backward diagonal safety
+    //check backward left diagonal safety
     for(i=row-1,j=col-1;i>=0 && j>=0;i--,j--){
         if(chessboard[i][j]=='Q'){
             return 0;
         }
     }
-    //check forward diagonal safety
+    //check backward right diagonal safety
     for(i=row-1,j=col+1;i>=0 && j<n;i--,j++){
         if(chessboard[i][j]=='Q'){
             return 0;
