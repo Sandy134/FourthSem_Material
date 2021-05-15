@@ -63,7 +63,7 @@ int main()
     scanf("%d",&n);
     chessboard = (char**)malloc(n*sizeof(char*));
     for(i=0;i<n;i++)
-        chessboard[i] = (char*)malloc(sizeof(char));
+        chessboard[i] = (char*)malloc(n*sizeof(char));
 
     for(i=0;i<n;i++){
         for(j=0;j<n;j++){
