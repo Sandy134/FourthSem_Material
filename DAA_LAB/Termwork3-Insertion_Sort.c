@@ -39,7 +39,7 @@ int main()
    }
    time_t start,end;
    start = clock();
-   for(i=0;i<3000000;i++)
+   for(i=0;i<1000000;i++)
    insertion(arr,n);
    end = clock();
    printf("\nArray after Sorting:\n");
